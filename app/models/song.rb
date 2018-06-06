@@ -25,6 +25,7 @@ class Song < ActiveRecord::Base
       self.notes << Note.find_or_create_by(content: note)
     end
   end
+end
 
   def note_contents
     contents = []
